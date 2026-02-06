@@ -4,26 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
         <title>Ainemapp</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Minu Portfoolio TTHK/TECHNOs õpitud ainetest:</h1>
         <br/> 
-        <p>
-            Siin on minu erialased õpitud ainetes tehtud tööd ja muud  ülesannete väljundid
+        <p class="intro-text">
+            Siin on minu erialased õpitud ainetes tehtud tööd ja muud  ülesannete väljundid:
         </p>
-        <ul>
-            <li><a href="./SDLC.html">Tarkvara Arendusprotsess</a></li>
-            <li>Programeerimise alused</li>
-            <li>Programeerimine I</li>
-            <li>Multimeedia</li>
-            <li>Veebirakenduste loomise alused</li>
-            <li>Andmebaasisüsteemide alused</li>
-            <li>Võrgurakendused</li>
-            <li>Mobiilirakendused</li>
-        </ul>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="./SDLC.html">Tarkvara Arendusprotsess</a></li>
+                <li><a href="#">Programmeerimise alused</a></li>
+                <li><a href="#">Programmeerimine I</a></li>
+                <li><a href="#">Multimeedia</a></li>
+                <li><a href="#">Veebirakenduste loomise alused</a></li>
+                <li><a href="#">Andmebaasisüsteemide alused</a></li>
+                <li><a href="#">Võrgurakendused</a></li>
+                <li><a href="#">Mobiilirakendused</a></li>
+            </ul>
+        </nav>
         <br><br>
-        ---------------------------------------------------------
+      
         <br><br>
+        <div class="about">
         <h2>Kes ma olen??</h2>
         <table>
             <tr>
@@ -40,8 +45,14 @@
             </tr>
             <tr>
                 <td>Pilt</td>
-                <td><img src="/images/fred.jpg" alt="Fred Durst"></td>
+                <td>
+                    <div class="image-card">
+                        <img src="/images/fred.jpg" alt="Fred Durst">
+                        <span class="image-caption">Keep rollin’, rollin’, rollin’</span>
+                    </div>
+                </td>
             </tr>
         </table>
+    </div>
     </body>
 </html>

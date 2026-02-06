@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #fff1f1 40%,
+        #ffe5e5 100%
+    );
+    color: #2b2b2b;
+    padding: 40px 20px;
+}
+
+/* PEALKIRI */
+h1 {
+    text-align: center;
+    color: #c40000;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* NAVIGEERIMISMENÜÜ */
+.nav-menu {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+@media (min-width: 700px) {
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+.nav-menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    background: #ffffff;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #c40000;
+    box-shadow: 0 10px 30px rgba(196, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* nool = nav signaal */
+.nav-menu a::after {
+    content: "→";
+    font-size: 1.2rem;
+    opacity: 0.45;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(196, 0, 0, 0.25);
+}
+
+.nav-menu a:hover::after {
+    transform: translateX(6px);
+    opacity: 1;
+}
+
+
+/* ABOUT – KESKEL */
+.about {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #c40000;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 14px 35px rgba(196, 0, 0, 0.15);
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #f0dada;
+}
+
+td:first-child {
+    font-weight: 600;
+    color: #c40000;
+    width: 40%;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* PILT */
+img {
+    max-width: 320px;
+    border-radius: 16px;
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.06);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+.intro-text {
+    max-width: 720px;
+    margin: 0 auto 30px auto;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.7;
+    text-align: center;
+    color: #c40000;
+}
+.image-card {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 16px 40px rgba(196, 0, 0, 0.25);
+}
+
+.image-card img {
+    display: block;
+    max-width: 320px;
+    transition: transform 0.45s ease;
+}
+
+.image-card:hover img {
+    transform: scale(1.12);
+}
+
+/* Tekst pildi peal */
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #fff1f1 60%,
+        #ffe5e5 100%
+    );
+    color: #a80000;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+}
+
+.image-card:hover .image-caption {
+    transform: translateY(0);
+}
