@@ -1,0 +1,5 @@
+img {
+    max-width: 320px;
+    border-radius: 16px;
+    transition: transform 0.4s ease;
+}
