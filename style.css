@@ -9,25 +9,25 @@ body {
     min-height: 100vh;
     background: linear-gradient(
         135deg,
-        #ffffff 0%,
-        #fff1f1 40%,
-        #ffe5e5 100%
+        #0a0a0a 0%,
+        #141414 50%,
+        #1c1c1c 100%
     );
-    color: #2b2b2b;
+    color: #eaeaea;
     padding: 40px 20px;
 }
 
 /* PEALKIRI */
 h1 {
     text-align: center;
-    color: #c40000;
+    color: #ffffff;
     margin-bottom: 12px;
     font-weight: 600;
 }
 
 p {
     text-align: center;
-    color: #555;
+    color: #aaaaaa;
     margin-bottom: 40px;
 }
 
@@ -54,28 +54,29 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 18px 22px;
-    background: #ffffff;
+    background: #1f1f1f;
     border-radius: 18px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    color: #c40000;
-    box-shadow: 0 10px 30px rgba(196, 0, 0, 0.12);
+    color: #f5f5f5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-/* nool = nav signaal */
+/* nool */
 .nav-menu a::after {
     content: "→";
     font-size: 1.2rem;
-    opacity: 0.45;
+    opacity: 0.4;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .nav-menu a:hover {
     transform: translateY(-4px);
-    box-shadow: 0 18px 45px rgba(196, 0, 0, 0.25);
+    background: #2a2a2a;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
 }
 
 .nav-menu a:hover::after {
@@ -83,8 +84,7 @@ p {
     opacity: 1;
 }
 
-
-/* ABOUT – KESKEL */
+/* ABOUT */
 .about {
     max-width: 650px;
     margin: 0 auto;
@@ -92,7 +92,7 @@ p {
 }
 
 h2 {
-    color: #c40000;
+    color: #ffffff;
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -101,20 +101,20 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse;
-    background: #ffffff;
+    background: #1f1f1f;
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 14px 35px rgba(196, 0, 0, 0.15);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.7);
 }
 
 td {
     padding: 16px;
-    border-bottom: 1px solid #f0dada;
+    border-bottom: 1px solid #333;
 }
 
 td:first-child {
     font-weight: 600;
-    color: #c40000;
+    color: #ffffff;
     width: 40%;
 }
 
@@ -147,6 +147,7 @@ img:hover {
         max-width: 100%;
     }
 }
+
 .intro-text {
     max-width: 720px;
     margin: 0 auto 30px auto;
@@ -154,14 +155,15 @@ img:hover {
     font-weight: 500;
     line-height: 1.7;
     text-align: center;
-    color: #c40000;
+    color: #cccccc;
 }
+
 .image-card {
     position: relative;
     display: inline-block;
     overflow: hidden;
     border-radius: 18px;
-    box-shadow: 0 16px 40px rgba(196, 0, 0, 0.25);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
 }
 
 .image-card img {
@@ -183,11 +185,10 @@ img:hover {
     padding: 12px;
     background: linear-gradient(
         135deg,
-        #ffffff 0%,
-        #fff1f1 60%,
-        #ffe5e5 100%
+        rgba(20,20,20,0.9),
+        rgba(40,40,40,0.9)
     );
-    color: #a80000;
+    color: #ffffff;
     font-size: 0.95rem;
     font-weight: 500;
     text-align: center;
