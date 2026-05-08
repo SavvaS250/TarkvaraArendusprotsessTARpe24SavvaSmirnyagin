@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD Diagrammid</title>
+</head>
+<body>
+
+<h1>ERD Diagrammid</h1>
+
+<h2>Mis on ERD?</h2>
+<p>
+    ERD ehk Entity Relationship Diagram on diagramm,
+    mida kasutatakse andmebaaside planeerimiseks ja kirjeldamiseks.
+</p><br>
+
+<h2>Kus ERD kasutatakse?</h2>
+<p>
+<ul>
+    <li>Andmebaaside loomisel</li>
+    <li>Tarkvaraarenduses</li>
+    <li>Infosüsteemide planeerimisel</li>
+</ul>
+</p><br>
+
+<h2>Seosed ERD diagrammides</h2>
+
+<h3>One-to-One</h3>
+<p>
+    Üks inimene - üks pass
+</p>
+
+<h3>One-to-Many</h3>
+<p>
+    Üks õpetaja - mitu õpilast
+</p>
+
+<h3>Many-to-Many</h3>
+<p>
+    Mitu õpilast - mitu kursust
+</p><br>
+
+<h2>Olemitabel</h2>
+<p>
+    Olemitabel sisaldab tabeli nime, välju, andmetüüpe ja võtmeid.
+</p>
+
+<h3>Näidis</h3>
+<p>
+<pre>
+Student
+----------------
+student_id
+name
+email
+class_id
+</pre>
+</p><br>
+
+<h2>Võtmed</h2>
+
+<h3>Primary Key</h3>
+<p>
+    Unikaalne identifikaator tabelis.
+</p>
+
+<h3>Foreign Key</h3>
+<p>
+    Viitab teise tabeli Primary Key väljale.
+</p>
+
+<h3>Composite Key</h3>
+<p>
+    Koosneb mitmest väljast.
+</p>
+
+<h3>Key</h3>
+<p>
+    Väli või väljade kombinatsioon andmete leidmiseks.
+</p><br>
+
+<h2>Võtmete kasutamine</h2>
+<p>
+<pre>
+Class
+--------------
+class_id (PK)
+
+Student
+--------------
+student_id (PK)
+class_id (FK)
+</pre>
+</p><br>
+
+<h3>Allikad:</h3>
+<p>
+<ul>
+    <li>https://www.lucidchart.com/pages/er-diagrams</li>
+    <li>https://www.visual-paradigm.com</li>
+    <li>https://www.geeksforgeeks.org</li>
+</ul>
+</p>
+
+</body>
+</html>
